@@ -64,7 +64,7 @@ order by obwod desc
 limit 2;
 
 --e
-select st_distance(a.geometry, b.geometry) from poi p, buildings b
+select st_distance(p.geometry, b.geometry) from poi p, buildings b
 where p.name = 'K' and b.name = 'BuildingC'
 
 --f
